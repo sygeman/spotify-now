@@ -1,23 +1,23 @@
 {
-  "name": "vite-template-solid",
-  "version": "0.0.0",
-  "description": "",
+  "name": "spotify-now",
+  "version": "0.0.1",
+  "license": "MIT",
+  "description": "OBS Overlay what is currently playing in your spotify",
   "scripts": {
     "start": "vite",
     "dev": "vite",
     "build": "vite build",
     "serve": "vite preview"
   },
-  "license": "MIT",
+  "dependencies": {
+    "@solidjs/router": "0.4.2",
+    "solid-js": "1.5.3"
+  },
   "devDependencies": {
     "@unocss/reset": "0.45.13",
     "typescript": "4.8.2",
     "unocss": "0.45.13",
     "vite": "3.0.9",
     "vite-plugin-solid": "2.3.0"
-  },
-  "dependencies": {
-    "@solidjs/router": "0.4.2",
-    "solid-js": "1.5.3"
   }
 }
