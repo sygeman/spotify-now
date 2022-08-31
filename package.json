@@ -9,7 +9,9 @@
     "build": "vite build",
     "serve": "vite preview",
     "login:dev": "wrangler dev ./src/api/login/index.ts",
-    "login:publish": "wrangler publish ./src/api/login/index.ts --name sn-login"
+    "login:publish": "wrangler publish ./src/api/login/index.ts --name sn-login",
+    "token:dev": "wrangler dev ./src/api/token/index.ts",
+    "token:publish": "wrangler publish ./src/api/token/index.ts --name sn-token"
   },
   "dependencies": {
     "@motionone/solid": "10.14.1",

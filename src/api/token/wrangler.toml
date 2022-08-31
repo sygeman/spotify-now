@@ -1,0 +1,7 @@
+name = "token"
+main = "index.ts"
+compatibility_date = "2022-08-31"
+
+kv_namespaces = [
+  { binding = "SN", id = "37882ae4c0cd4661ba4412c19a016b06" }
+]
