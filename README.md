@@ -7,4 +7,3 @@ OBS Overlay what is currently playing in your spotify
 ### TODO
 
 - [ ] Notification
-- [ ] Saturn
