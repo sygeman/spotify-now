@@ -45,7 +45,11 @@ export default {
 
     await env.SN.put(
       `user:${userId}`,
-      JSON.stringify({ access_token, refresh_token, expires_in })
+      JSON.stringify({
+        access_token,
+        refresh_token,
+        expires_in: Date.now() + expires_in * 1000,
+      })
     );
 
     const userOverlayId = `user:${userId}:overlayId`;

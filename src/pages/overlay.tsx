@@ -17,7 +17,10 @@ const OverlayPage = () => {
     })
       .then((data) => data.json())
       .then((data) => setData(parseData(data)))
-      .catch((error) => console.log(error));
+      .catch((error) => {
+        console.log(error);
+        getToken(overlayId, true).then(setToken);
+      });
   };
 
   createEffect(() => {
