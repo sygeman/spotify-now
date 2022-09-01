@@ -21,6 +21,12 @@ const IndexPage = () => {
     }
   });
 
+  const logout = () => {
+    localStorage.removeItem("token");
+    localStorage.removeItem("overlayId");
+    setOverlayId(null);
+  };
+
   const copyOverlayLink = () => copy(overlayLink());
 
   return (
@@ -42,14 +48,20 @@ const IndexPage = () => {
           >
             Copy
           </button>
+          <button
+            class="bg-red-800 hover:bg-red-800/80 transition delay-75 px-2 py-1 rounded"
+            onClick={logout}
+          >
+            Logout
+          </button>
         </div>
       </Show>
       <Show when={!overlayId()}>
         <a
-          class="px-2 py-1 rounded bg-slate-700 hover:bg-slate-800"
+          class="px-2 py-1 rounded bg-slate-700 hover:bg-slate-800 font-medium"
           href="https://sn-login.sgmn.workers.dev"
         >
-          Sign in
+          Login with Spotify
         </a>
       </Show>
     </div>
