@@ -16,6 +16,12 @@ export default {
 
     let userData: { access_token: string } = JSON.parse(userDataAsString);
 
-    return new Response(userData?.["access_token"]);
+    return new Response(userData?.["access_token"], {
+      headers: {
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET,HEAD,POST,OPTIONS",
+        "Access-Control-Max-Age": "86400",
+      },
+    });
   },
 };
