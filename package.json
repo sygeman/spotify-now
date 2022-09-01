@@ -14,7 +14,9 @@
     "token:dev": "wrangler dev ./src/api/token/index.ts",
     "token:publish": "wrangler publish ./src/api/token/index.ts --name sn-token",
     "callback:dev": "wrangler dev ./src/api/callback/index.ts",
-    "callback:publish": "wrangler publish ./src/api/callback/index.ts --name sn-callback"
+    "callback:publish": "wrangler publish ./src/api/callback/index.ts --name sn-callback",
+    "refresh:dev": "wrangler dev ./src/api/refresh/index.ts",
+    "refresh:publish": "wrangler publish ./src/api/refresh/index.ts --name sn-refresh"
   },
   "dependencies": {
     "@motionone/solid": "10.14.1",
