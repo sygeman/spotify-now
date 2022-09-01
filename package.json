@@ -19,6 +19,7 @@
   "dependencies": {
     "@motionone/solid": "10.14.1",
     "@solidjs/router": "0.4.3",
+    "copy-to-clipboard": "3.3.2",
     "nanoid": "4.0.0",
     "solid-js": "1.5.3"
   },

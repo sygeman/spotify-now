@@ -65,6 +65,6 @@ export default {
       }
     }
 
-    return Response.redirect(`${env.REDIRECT_URL}/${overlayId}`);
+    return Response.redirect(`${env.REDIRECT_URL}/?overlayId=${overlayId}`);
   },
 };
