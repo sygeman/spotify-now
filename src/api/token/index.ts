@@ -1,9 +1,5 @@
 export interface Env {
   SN: KVNamespace;
-
-  SPOTIFY_ID: string;
-  SPOTIFY_SCOPE: string;
-  SPOTIFY_CALLBACK: string;
 }
 
 export default {

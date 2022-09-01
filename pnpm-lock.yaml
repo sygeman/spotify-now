@@ -5,6 +5,7 @@ specifiers:
   '@motionone/solid': 10.14.1
   '@solidjs/router': 0.4.2
   '@unocss/reset': 0.45.13
+  nanoid: 4.0.0
   solid-js: 1.5.3
   typescript: 4.8.2
   unocss: 0.45.13
@@ -15,6 +16,7 @@ specifiers:
 dependencies:
   '@motionone/solid': 10.14.1_solid-js@1.5.3
   '@solidjs/router': 0.4.2_solid-js@1.5.3
+  nanoid: 4.0.0
   solid-js: 1.5.3
 
 devDependencies:
@@ -1819,6 +1821,12 @@ packages:
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
     dev: true
+
+  /nanoid/4.0.0:
+    resolution: {integrity: sha512-IgBP8piMxe/gf73RTQx7hmnhwz0aaEXYakvqZyE302IXW3HyVNhdNGC+O2MwMAVhLEnvXlvKtGbtJf6wvHihCg==}
+    engines: {node: ^14 || ^16 || >=18}
+    hasBin: true
+    dev: false
 
   /node-fetch-native/0.1.4:
     resolution: {integrity: sha512-10EKpOCQPXwZVFh3U1ptOMWBgKTbsN7Vvo6WVKt5pw4hp8zbv6ZVBZPlXw+5M6Tyi1oc1iD4/sNPd71KYA16tQ==}
