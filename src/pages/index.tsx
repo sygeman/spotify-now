@@ -33,7 +33,6 @@ const IndexPage = () => {
   };
 
   const logout = () => {
-    localStorage.removeItem("token");
     localStorage.removeItem("overlayId");
     setOverlayId(null);
   };
